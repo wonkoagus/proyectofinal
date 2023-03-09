@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/gridAgus.css">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio de Artista</title>
+    <script src="js/datosPersonales.js"></script>
+
+</head>
+
+<body class="grid-container">
+
+
+
+
+
+    <header class="header">
+
+        <img class="img" src="ASSETS/retrato.jpg" alt="">
+
+
+        <div class="nombre">
+            <h3>Matias Wonko</h3>
+                <h4>Artista Visual</h4>
+        </div>
+        
+    </header>
+   
+    <nav class="navbar" id="navbar">
+
+        
+
+        <ul class="list">
+
+            <li class="list__item">
+                <div class="list__boton">
+                    <img class="foto" src="ASSETS/Arrow.svg" class="list__img">
+
+                    <a href="#" onclick="mostrarDatosPersonales()" id="mostrarDatosPersonales()" class="nav__link">DATOS
+                        PERSONALES</a>
+                </div>
+            </li>
+
+            <li class="list__item">
+                <div class="list__boton">
+                    <img src="ASSETS/Arrow.svg" class="list__img">
+                    <a href="#" onclick="mostrarBio()" id="mostrarBio()" class="nav__link">BIO</a>
+
+
+
+                </div>
+            </li>
+
+            <li class="list__item list__item--click">
+                <div class="list__boton list__boton--click">
+                    <img src="ASSETS/Arrow.svg" class="list__img">
+                    <a href="#" class="nav__link">PORTFOLIO</a>
+                    <img src="ASSETS/folder.svg" class="list_img" alt="icono de carpeta">
+                </div>
+
+                <ul class="list__show">
+
+                    <li class="list__inside">
+                        <a id="mostrarGaleria()" href="#" onclick="mostrarGaleria()"
+                            class="nav__link nav__link--inside">FOTOGRAFIA</a>
+
+
+
+
+
+
+                        
+               
+
+                    </li>
+
+                    <li class="list__inside">
+                        <a id="mostrarObras()" herf="#" onclick="mostrarObras()"
+                            class="nav__link nav__link--inside">OBRAS</a>
+
+                    </li>
+
+
+
+                    <li class="list__inside">
+                        <a id="mostrarTrabajos()" herf="#" onclick="mostrarTrabajos()"
+                            class="nav__link nav__link--inside">TRABAJOS</a>
+                    </li>
+
+
+                </ul>
+
+
+            <li class="list__item">
+                <div class="list__boton">
+                    <img class="foto" src="ASSETS/Arrow.svg" class="list__img">
+
+                    <a href="#" onclick="mostrarContacto()" id="mostrarContacto()" class="nav__link">CONTACTO</a>
+
+
+
+
+
+
+                </div>
+            </li>
+
+
+        </ul>
+
+
+
+
+
+
+
+    </nav>
+</div>
+</li>
+
+</div>
+</li>
+
+
+
+    </div>
+
+    </nav>
+    <article class="main">
+
+        <!-- aca iria un hidden = true -->
+        <section id="datosPersonales" class="datosPersonales" >
+            <article id="datosPersonalesDatos" class="datosPersonalesDatos">
+
+                <div id="datosPersona">
+                    <h3>DATOS PERSONALES</h3>
+                    <br>
+                    Fecha de nacimiento: <span id="FechaNacimiento"></span>
+                    <br>
+            
+                    Edad: <span id="edad"></span>
+                    <br>
+                    Nacionalidad: <span id="nacionalidad"></span>
+                    <br>
+                </div>
+             
+                    
+          
+             
+            </article>
+            <article class="statementDeArtista">
+                <h3>Statement de Artista</h3>
+                <p>Acà deberia ir un texto </p>
+        </section>
+
+
+        <section id="galeria" class="galeria" style="display: none">
+
+            <article class="galeria-container">
+             <div class="galeria__item"><img src="imagenes/fotografia/1.jpg" alt="" class="galeria__img"></div>
+             <div class="galeria__item"><img src="imagenes/fotografia/2.jpg" alt="" class="galeria__img"></div>
+             <div class="galeria__item"><img src="imagenes/fotografia/3.jpg" alt="" class="galeria__img"></div>
+             <div class="galeria__item"><img src="imagenes/fotografia/4.jpg" alt="" class="galeria__img"></div>
+             <div class="galeria__item"><img src="imagenes/fotografia/5.jpg" alt="" class="galeria__img"></div>
+             <div class="galeria__item"><img src="imagenes/fotografia/6.jpg" alt="" class="galeria__img"></div>
+             <div class="galeria__item"><img src="imagenes/fotografia/7.jpg" alt="" class="galeria__img"></div>
+             <div class="galeria__item"><img src="imagenes/fotografia/8.jpg" alt="" class="galeria__img"></div>
+             <div class="galeria__item"><img src="imagenes/fotografia/9.jpg" alt="" class="galeria__img"></div>
+             <div class="galeria__item"><img src="imagenes/fotografia/10.jpg" alt="" class="galeria__img"></div>
+            
+             <div class="galeria__item"><img src="imagenes/fotografia/12.jpg" alt="" class="galeria__img"></div>
+             <div class="galeria__item"><img src="imagenes/fotografia/13.jpg" alt="" class="galeria__img"></div>
+             <div class="galeria__item"><img src="imagenes/fotografia/14.jpg" alt="" class="galeria__img"></div>
+            </article>
+
+        </section>
+
+
+        <section id="bio" class="bio" style="display: none">
+            <article>
+                <p>Texto biografico del artista.
+                </p>
+            </article>
+        </section>
+
+
+        <section id="obras" class="obras" style="display: none">
+            <article class="contenidoObras">
+                <img src="ASSETS/construccion.svg" alt="Galeria en construccion">
+                <p>GALERIA EN CONSTRUCCION</p>
+            </article>
+        </section>
+
+        <section id="trabajos" class="galeria" style="display: none">
+            
+
+                <article class="galeria-container-trabajos">
+                    <div class="galeria__texto"> <h3>PRODUCCION FILO DULCE & UTOPIA COLORS</h3> <p>Produccion en Estudio Zagreb <br> Estilismo Valentina Goy <br> </p></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/filoDulce/1.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/filoDulce/2.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/filoDulce/3.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/filoDulce/4.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/filoDulce/5.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/filoDulce/6.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/filoDulce/7.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/filoDulce/8.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/filoDulce/9.jpg" alt="" class="galeria__img"></div>
+                    
+                    <div class="galeria__texto"> <h3>PRODUCCION RADIAL</h3> <p>Produccion en Estudio Zagreb <br> Estilismo Valentina Goy <br> </p></div>
+
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/RADIO/1.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/RADIO/2.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/RADIO/3.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/RADIO/4.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/RADIO/5.jpg" alt="" class="galeria__img"></div>
+
+                    <div class="galeria__texto"> <h3>PRODUCCION COCTELERIA</h3> <p>Bela Lugosi Bar <br>  <br> </p></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/belaLugosi/1.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/belaLugosi/2.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/belaLugosi/3.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/belaLugosi/4.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/belaLugosi/5.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/belaLugosi/6.jpg" alt="" class="galeria__img"></div>
+
+                    <div class="galeria__texto"> <h3>MIKROON BIKES</h3> <p>Produccion en Estudio Zagreb <br> Fotografia de producto <br> </p></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/MIKROON/1.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/MIKROON/2.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/MIKROON/3.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/MIKROON/4.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/MIKROON/5.jpg" alt="" class="galeria__img"></div>
+                    
+                    <div class="galeria__texto"> <h3>UTOPIA</h3> <p>Produccion en Estudio Zagreb <br> Fotografia de producto <br> </p></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/UTOPIA/1.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/UTOPIA/2.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/UTOPIA/3.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/UTOPIA/4.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/UTOPIA/5.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/UTOPIA/6.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/UTOPIA/7.jpg" alt="" class="galeria__img"></div>
+
+                    <div class="galeria__texto"> <h3>TEATRO</h3> <p>Produccion en Estudio Zagreb <br> <br> </p></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/TEATRO/1.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/TEATRO/2.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/TEATRO/3.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/TEATRO/4.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/TEATRO/5.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/TEATRO/6.jpg" alt="" class="galeria__img"></div>
+
+                    <div class="galeria__texto"> <h3>NISKA</h3> <p>Produccion en Estudio Zagreb <br> Fotografia de producto <br> </p></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/niska/1.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/niska/2.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/niska/3.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/niska/4.jpg" alt="" class="galeria__img"></div>
+
+                    <div class="galeria__texto"> <h3>BUBBA</h3> <p>Produccion en Estudio Zagreb <br> Fotografia de producto <br> </p></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/bubba/1.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/bubba/2.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/bubba/3.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/bubba/4.jpg" alt="" class="galeria__img"></div>
+
+                    <div class="galeria__texto"> <h3>Noelia Correa</h3> <p>Registro fotopgrafico de performance de artista <br>  <br> </p></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/NOECORREA/1.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/NOECORREA/2.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/NOECORREA/3.jpg" alt="" class="galeria__img"></div>
+
+                    <div class="galeria__texto"> <h3>VOV</h3> <p>Produccion en Estudio Zagreb <br> Fotografia de moda <br> </p></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/VOV/1.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/VOV/2.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/VOV/3.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/VOV/4.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/VOV/5.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/VOV/6.jpg" alt="" class="galeria__img"></div>
+
+                    <div class="galeria__texto"> <h3>PODER</h3> <p>Produccion en Estudio Zagreb <br> Fotografia de moda <br> </p></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/PODER/1.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/PODER/2.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/PODER/3.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/PODER/4.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/PODER/5.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/PODER/6.jpg" alt="" class="galeria__img"></div>
+
+                    <div class="galeria__texto"> <h3>CLOTHES</h3> <p>Produccion en Estudio Zagreb <br> Fotografia de producto <br> </p></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/Clothes/1.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/Clothes/2.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/Clothes/3.jpg" alt="" class="galeria__img"></div>
+
+                    <div class="galeria__texto"> <h3>LILI GONZALES</h3> <p>Fotografia para tapa de libro <br> Fotografia de producto <br> </p></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/liliGonzales/1.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/liliGonzales/2.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/liliGonzales/3.jpg" alt="" class="galeria__img"></div>
+                    <div class="galeria__item"><img src="imagenes/TRABAJOS/liliGonzales/4.jpg" alt="" class="galeria__img"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+    
+            
+    
+        </section>
+
+<!-- LISTA DE DATOS ,CONTATOS -->
+
+        <section id="contacto" class="contacto" style="display: none">
+           
+                <ul class="cajaDeContacto">
+
+
+                    <li class="datos__contacto">
+
+                        Numero de telefono: +54-351351351</address>
+
+                        <address> <a class="nav__link" href="wonkomatias@gmail.com" target="_blank"> E-mail: wonkomatias@gmail.com</a></address>
+
+                    </li>
+
+
+                    <li>
+                        <div class="redes__contacto">
+
+
+                            <img src="ASSETS/instagramicon.svg" alt="instagramicon">
+                            <a class="nav__link" href="https://www.instagram.com/wonkomat/" target="_blank">Instagram
+                            </a>
+                            </a>
+
+
+
+                            <img src="ASSETS/whatsappicon.svg" alt="WHATSAPP icono">
+                            <a class="nav__link" href="http://wa.me/5493515135514" target="_blank">Whastapp </a>
+                        </div>
+                    </li>
+
+
+                </ul>
+
+
+
+
+           
+        </section>
+
+
+
+
+    </article>
+    <footer class="footer">
+       
+            <p>Desarollado por Agustin Wonko</p>
+
+     
+    </footer>
+
+
+
+
+    </div>
+    <script src="js/codmenu.js"></script>
+</body>
+
+</html>
